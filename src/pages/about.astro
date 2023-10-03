@@ -1,0 +1,26 @@
+---
+import MainLayout from "../layouts/MainLayout.astro"
+import Link from "../components/Link.astro"
+---
+
+
+<MainLayout title="About" description="About Us Page">
+	<section class="container about" aria-label="About Me">
+        <img
+            src="/images/headshot.jpg"
+            alt="My headshot"
+            width="200"
+            height="330"
+        >
+        <div class="content">
+            <h1 class="h1">My Blog</h1>
+            <p>Emily, an web developer at Tetonic Development, embraced this tutorial to enhance her Astro.build skills. In this blog, discover web development insights, focusing on Astro's capabilities. Astro.build, a dynamic tool, combines server rendering and static site speed, making it invaluable for projects. Emily's expertise ensures distinctive and swift sites, showing you how to harness Astro's potential for your blogs.</p>
+            <Link 
+                href="mailto:emily@tetonic.dev" 
+                style="primary" 
+                text="connect with me"
+                target="_blank"
+            />
+        </div>
+    </section>
+</MainLayout>
