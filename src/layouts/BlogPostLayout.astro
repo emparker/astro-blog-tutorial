@@ -1,11 +1,10 @@
 ---
 import MainLayout from "./MainLayout.astro"
 import PostHeader from "../components/PostHeader.astro"
+import CategoryCloud from "../components/CategoryCloud.astro"
 
 const { frontmatter } = Astro.props
-console.log("frontmatter => ", frontmatter)
 const { title, description, date, category, author, image } = frontmatter 
-console.log("image: ", image)
 ---
 
 
@@ -22,6 +21,11 @@ console.log("image: ", image)
         <div class="content">
             <slot />
         </div>
-        <div class="sidebar"></div>
+        <div class="sidebar">
+            <aside class="container" aria-label="Blog categories"> 
+                <h2 class="h3">Blog Categories</h2>
+                <CategoryCloud/>
+            </aside>
+        </div>
     </div>
 </MainLayout>
