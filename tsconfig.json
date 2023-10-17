@@ -1,4 +1,10 @@
 {
   "extends": "astro/tsconfigs/base",
-  "files": ["src/pages/blog/[...page].astro"]
+  "files": [
+    "src/pages/blog/[...page].astro"
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  }
 }

@@ -38,7 +38,7 @@ h6 {
 /* CSS variables inspired by https://open-props.style/ */
 :root {
   /* colors */
-  --_hue: 235;
+  --_hue: 20;
 
   /* Light Mode */
   --bkg--light: var(--_hue) 25% 97%;
@@ -289,7 +289,7 @@ button {
     user-select: none;
   }
 
-  & (svg) {
+  & svg {
     height: var(--fs-md);
     width: var(--fs-md);
   }

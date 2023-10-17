@@ -1,7 +1,7 @@
 ---
 import type { imageConfig } from "astro:assets"
-import Seo from "../components/Seo.astro"
 //component imports
+import Seo from "../components/Seo.astro"
 
 const { title, description, image, frontmatter, robots } = Astro.props
 ---
@@ -13,7 +13,7 @@ const { title, description, image, frontmatter, robots } = Astro.props
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
         <meta name="description" content={description}/>
-        <Seo  {title} {description} url={Astro.url} {image} {frontmatter} robots />
+        <Seo  {title} {description} url={Astro.url} {image} {frontmatter} {robots} />
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
